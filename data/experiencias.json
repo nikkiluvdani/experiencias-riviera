@@ -1,0 +1,12 @@
+[ 
+  {"id":1,"nombre":"Cenote Azul","categoria":"naturaleza","precio":350,"cupo":15,"icono":"🌊"}, 
+  {"id":2,"nombre":"Zona arqueológica","categoria":"cultura","precio":480,"cupo":20,"icono":"🗿"}, 
+  {"id":3,"nombre":"Ruta en tirolesa","categoria":"aventura","precio":750,"cupo":10,"icono":"🌴"}, 
+  {"id":4,"nombre":"Kayak en manglar","categoria":"aventura","precio":680,"cupo":8,"icono":"🛶"}, 
+  {"id":5,"nombre":"Ruta de sabores mayas","categoria":"gastronomia","precio":620,"cupo":12,"icono":"🍲"}, 
+  {"id":6,"nombre":"Santuario de tortugas","categoria":"naturaleza","precio":420,"cupo":18,"icono":"🐢"}, 
+  {"id":7,"nombre":"Parque acuatico","categoria":"familiar","precio":500,"cupo":10,"icono":"🐳"}, 
+  {"id":8,"nombre":"Clases de cocina mexicana","categoria":"gastronomia","precio":700,"cupo":10,"icono":"👩‍🍳"}, 
+  {"id":9,"nombre":"Paseo en catamarán","categoria":"aventura","precio":800,"cupo":12,"icono":"⛵"},
+  {"id":10,"nombre":"Espectáculo familiar","categoria":"familiar","precio":950,"cupo":10,"icono":"🎪"}
+] 

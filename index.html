@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservas Riviera Maya</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Reservas Riviera Maya</h1>
+        <p>Selecciona y calcula tu experiencia turística</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="controles" aria-label="Controles del catálogo">
+
+            <input
+                id="buscador"
+                type="search"
+                placeholder="Buscar experiencia..."
+                aria-label="Buscar experiencia por nombre"
+            >
+
+            <input
+                id="precioMaximo"
+                type="number"
+                min="0"
+                step="50"
+                placeholder="Precio máximo (MXN)"
+                aria-label="Precio máximo en pesos mexicanos"
+            >
+
+            <select id="filtroCategoria" aria-label="Filtrar por categoría">
+                <option value="todas">Todas las categorías</option>
+                <option value="naturaleza">Naturaleza</option>
+                <option value="cultura">Cultura</option>
+                <option value="aventura">Aventura</option>
+                <option value="gastronomia">Gastronomía</option>
+                <option value="familiar">Familiar</option>
+            </select>
+
+            <select id="ordenPrecio" aria-label="Ordenar por precio">
+                <option value="normal">Orden original</option>
+                <option value="ascendente">Menor precio</option>
+                <option value="descendente">Mayor precio</option>
+            </select>
+
+        </section>
+
+        <p id="estado" class="estado" role="status" aria-live="polite">
+            Cargando experiencias...
+        </p>
+
+        <p
+            id="mensaje"
+            class="mensaje"
+            role="status"
+            aria-live="polite"
+            hidden
+        ></p>
+
+        <section
+            id="catalogo"
+            class="catalogo"
+            aria-label="Catálogo de experiencias"
+        ></section>
+
+        <section class="resumen" aria-labelledby="tituloResumen">
+
+            <h2 id="tituloResumen">Mi reservación</h2>
+
+            <button
+                id="btnVaciar"
+                class="btn-vaciar"
+                type="button"
+                disabled
+            >
+                Vaciar reservación
+            </button>
+
+            <div
+                id="panelConfirmacionVaciar"
+                class="confirmacion"
+                role="alertdialog"
+                aria-label="Confirmar vaciado de la reservación"
+                hidden
+            >
+                <p>
+                    ¿Estás seguro de que deseas vaciar toda la reservación?
+                </p>
+
+                <button
+                    id="btnConfirmarVaciar"
+                    class="btn-eliminar"
+                    type="button"
+                >
+                    Sí, vaciar
+                </button>
+
+                <button
+                    id="btnCancelarVaciar"
+                    class="btn-cancelar"
+                    type="button"
+                >
+                    Cancelar
+                </button>
+            </div>
+
+            <div id="listaReservas">
+                <p>No hay experiencias seleccionadas.</p>
+            </div>
+
+            <p class="total">
+                Total: <span id="total">$0 MXN</span>
+            </p>
+
+            <p class="total-personas">
+                Total de personas:
+                <span id="totalPersonas">0</span>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto académico de frontend</p>
+    </footer>
+</body>
+</html>
+```
